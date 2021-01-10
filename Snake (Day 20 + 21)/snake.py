@@ -1,6 +1,7 @@
 from turtle import Turtle
 
 MOVE_DIST   = 20
+
 UP          = 90
 DOWN        = 270
 LEFT        = 180
@@ -26,6 +27,13 @@ class Snake:
             seg.penup()
             seg.goto(x=-20 * i, y=0)
             self.segments.append(seg)
+
+    def create_segment(self):
+        seg = Turtle("square")
+        seg.color("white")
+        seg.penup()
+        self.segments.append(seg)
+        self.length += 1
 
     def move(self):
 
