@@ -8,6 +8,7 @@ class Scoreboard(Turtle):
     def __init__(self):
 
         super().__init__()
+        self.p1_score = None
         self.color("white")
         self.ht()
         self.goto(x=0, y=270)
